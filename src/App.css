@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: #55b1c9;
+}
+
+#app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Black Ops One", cursive;
+}
+
+#app-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.336);
+}
+#timer-length-controls-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#controls-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#break-label {
+  font-size: 25px;
+}
+
+#session-label {
+  font-size: 25px;
+}
+
+#break-length {
+  font-size: 30px;
+  width: 70px;
+}
+#session-length {
+  font-size: 30px;
+  width: 70px;
+}
+
+#timer {
+  margin: 20px auto 10px auto;
+}
+
+#timer-label {
+  font-size: 25px;
+}
+
+#time-left {
+  font-size: 50px;
+  font-family: "Black Ops One", cursive;
+}
+
+#timer-controls {
+  margin-bottom: 20px;
+}
+
+#timer-controls button {
+  font-size: 25px;
+  margin: 10px;
+}
+
+#author {
+  color: rgba(0, 0, 0, 0.336);
+  font-style: italic;
+}
+
+@media screen and (max-width: 450px) {
+  #app-title {
+    font-size: 24px;
+  }
+  #timer-length-controls-wrapper {
+    flex-direction: column;
+  }
+}
